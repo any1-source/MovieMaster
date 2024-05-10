@@ -14,6 +14,9 @@
 		E6BBAAD52BECD34C0066F452 /* MovieMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BBAAD42BECD34C0066F452 /* MovieMasterTests.swift */; };
 		E6BBAADF2BECD34C0066F452 /* MovieMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BBAADE2BECD34C0066F452 /* MovieMasterUITests.swift */; };
 		E6BBAAE12BECD34C0066F452 /* MovieMasterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BBAAE02BECD34C0066F452 /* MovieMasterUITestsLaunchTests.swift */; };
+		E6BBAAEE2BED0F040066F452 /* MovieDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BBAAED2BED0F040066F452 /* MovieDatabase.swift */; };
+		E6BBAAF02BEDFD120066F452 /* MovieScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BBAAEF2BEDFD120066F452 /* MovieScreen.swift */; };
+		E6BBAAF22BEDFD240066F452 /* YoutubeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BBAAF12BEDFD240066F452 /* YoutubeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		E6BBAADA2BECD34C0066F452 /* MovieMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6BBAADE2BECD34C0066F452 /* MovieMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMasterUITests.swift; sourceTree = "<group>"; };
 		E6BBAAE02BECD34C0066F452 /* MovieMasterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMasterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E6BBAAED2BED0F040066F452 /* MovieDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDatabase.swift; sourceTree = "<group>"; };
+		E6BBAAEF2BEDFD120066F452 /* MovieScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieScreen.swift; sourceTree = "<group>"; };
+		E6BBAAF12BEDFD240066F452 /* YoutubeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 				E6BBAAC52BECD34B0066F452 /* ContentView.swift */,
 				E6BBAAC72BECD34C0066F452 /* Assets.xcassets */,
 				E6BBAAC92BECD34C0066F452 /* Preview Content */,
+				E6BBAAED2BED0F040066F452 /* MovieDatabase.swift */,
+				E6BBAAEF2BEDFD120066F452 /* MovieScreen.swift */,
+				E6BBAAF12BEDFD240066F452 /* YoutubeScreen.swift */,
 			);
 			path = MovieMaster;
 			sourceTree = "<group>";
@@ -257,6 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6BBAAF02BEDFD120066F452 /* MovieScreen.swift in Sources */,
+				E6BBAAF22BEDFD240066F452 /* YoutubeScreen.swift in Sources */,
+				E6BBAAEE2BED0F040066F452 /* MovieDatabase.swift in Sources */,
 				E6BBAAC62BECD34B0066F452 /* ContentView.swift in Sources */,
 				E6BBAAC42BECD34B0066F452 /* MovieMasterApp.swift in Sources */,
 			);
