@@ -11,8 +11,12 @@ struct ContentView: View {
     var body: some View {
         TabView() {
             MovieScreen().tabItem{
-                Label("SQL", systemImage: "4.circle")}
-            
+                Label("SQL", systemImage: "1.circle")}
+            SQLiteTempScreen().tabItem{
+                Label("SQL",
+                      systemImage:
+                "2.circle")
+            }
         }
         .padding()
     }

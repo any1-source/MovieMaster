@@ -10,10 +10,12 @@ import SwiftUI
 @main
 struct MovieMasterApp: App {
     @State private var movieViewModel = MovieViewModel()
-    
+    @State private var sqliteViewModel = SQLiteViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView().environment(\.movieViewModel, movieViewModel)
+                .environment(
+                sqliteViewModel)
         }
     }
 }

@@ -17,6 +17,9 @@
 		E6BBAAEE2BED0F040066F452 /* MovieDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BBAAED2BED0F040066F452 /* MovieDatabase.swift */; };
 		E6BBAAF02BEDFD120066F452 /* MovieScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BBAAEF2BEDFD120066F452 /* MovieScreen.swift */; };
 		E6BBAAF22BEDFD240066F452 /* YoutubeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BBAAF12BEDFD240066F452 /* YoutubeScreen.swift */; };
+		E6BBAAF42BF8AEE20066F452 /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BBAAF32BF8AEE20066F452 /* SQLiteDatabase.swift */; };
+		E6BBAAF72BF8B0630066F452 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = E6BBAAF62BF8B0630066F452 /* SQLite */; };
+		E6BBAAF92BF8C7910066F452 /* SQLiteTempScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BBAAF82BF8C7910066F452 /* SQLiteTempScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,8 @@
 		E6BBAAED2BED0F040066F452 /* MovieDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDatabase.swift; sourceTree = "<group>"; };
 		E6BBAAEF2BEDFD120066F452 /* MovieScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieScreen.swift; sourceTree = "<group>"; };
 		E6BBAAF12BEDFD240066F452 /* YoutubeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeScreen.swift; sourceTree = "<group>"; };
+		E6BBAAF32BF8AEE20066F452 /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
+		E6BBAAF82BF8C7910066F452 /* SQLiteTempScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteTempScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6BBAAF72BF8B0630066F452 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +113,8 @@
 				E6BBAAED2BED0F040066F452 /* MovieDatabase.swift */,
 				E6BBAAEF2BEDFD120066F452 /* MovieScreen.swift */,
 				E6BBAAF12BEDFD240066F452 /* YoutubeScreen.swift */,
+				E6BBAAF32BF8AEE20066F452 /* SQLiteDatabase.swift */,
+				E6BBAAF82BF8C7910066F452 /* SQLiteTempScreen.swift */,
 			);
 			path = MovieMaster;
 			sourceTree = "<group>";
@@ -152,6 +160,9 @@
 			dependencies = (
 			);
 			name = MovieMaster;
+			packageProductDependencies = (
+				E6BBAAF62BF8B0630066F452 /* SQLite */,
+			);
 			productName = MovieMaster;
 			productReference = E6BBAAC02BECD34B0066F452 /* MovieMaster.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +235,9 @@
 				Base,
 			);
 			mainGroup = E6BBAAB72BECD34B0066F452;
+			packageReferences = (
+				E6BBAAF52BF8B0630066F452 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			productRefGroup = E6BBAAC12BECD34B0066F452 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -269,8 +283,10 @@
 				E6BBAAF02BEDFD120066F452 /* MovieScreen.swift in Sources */,
 				E6BBAAF22BEDFD240066F452 /* YoutubeScreen.swift in Sources */,
 				E6BBAAEE2BED0F040066F452 /* MovieDatabase.swift in Sources */,
+				E6BBAAF92BF8C7910066F452 /* SQLiteTempScreen.swift in Sources */,
 				E6BBAAC62BECD34B0066F452 /* ContentView.swift in Sources */,
 				E6BBAAC42BECD34B0066F452 /* MovieMasterApp.swift in Sources */,
+				E6BBAAF42BF8AEE20066F452 /* SQLiteDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E6BBAAF52BF8B0630066F452 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E6BBAAF62BF8B0630066F452 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E6BBAAF52BF8B0630066F452 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E6BBAAB82BECD34B0066F452 /* Project object */;
 }
