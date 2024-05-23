@@ -14,6 +14,7 @@ struct User: Identifiable, Hashable{
     var password: String
 }
 struct myMovie: Identifiable, Hashable{
+    var order: Int64
     var id: Int64
 }
 @Observable
@@ -38,8 +39,10 @@ class SQLiteViewModel{
         do {
             let documentDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil,create: true)
             let fileUrl = documentDirectory.appendingPathComponent("movies").appendingPathExtension("sqlite3")
-            db = try Connection("\(fileUrl.path)/movies.sqlite3")
+            db = try Connection("\(fileUrl.path)")
             createTables()
+            //TODO: remove later
+            addTestData()
             print("movies Database conn ok")
         } catch {
             db = nil
@@ -111,26 +114,34 @@ class SQLiteViewModel{
             print("Failed to clear table seenMovies: \(error)")
         }
     }
-    func deleteSeenMovie(id movieId: Int64){
+    func deleteSeenMovie(at offsets: IndexSet){
         do {
-            let seenMovie = seenMovieTable.filter(self.movieId == movieId)
-            try db?.run(seenMovie.delete())
+             try offsets.forEach{ id in
+                let seenMovie = seenMovieTable.filter(self.movieId == Int64(id))
+                try db?.run(seenMovie.delete())
+            }
+            
         } catch {
             print("Delete seen movie from table failed: \(error)")
         }
     }
-    func deleteWatchListMovie(id movieId: Int64){
+    func deleteWatchListMovie(at offsets: IndexSet){
         do {
-            let watchListMovie = watchListTable.filter(self.movieId == movieId)
-            try db?.run(watchListMovie.delete())
+             try offsets.forEach{ id in
+                let WatchListMovie = watchListTable.filter(self.movieId == Int64(id))
+                 try db?.run(WatchListMovie.delete())
+            }
+            
         } catch {
-            print("Delete to be watched movie from table failed: \(error)")
+            print("Delete seen movie from table failed: \(error)")
         }
     }
-    func deleteUser(id: Int64){
+    func deleteUser(at offsets: IndexSet){
         do {
-            let user = usersTable.filter(self.id == id)
-            try db?.run(user.delete())
+            try offsets.forEach{ id in
+                let user = usersTable.filter(self.id == Int64(id))
+                try db?.run(user.delete())
+            }
         } catch {
             print("Delete user from table failed: \(error)")
         }
@@ -140,7 +151,7 @@ class SQLiteViewModel{
         
         do {
             for item in try db!.prepare(seenMovieTable) {
-                resultItems.append(myMovie(id:item[movieId]))
+                resultItems.append(myMovie(order:item[order], id:item[movieId]))
             }
         } catch {
             print("Fetch cat failed: \(error)")
@@ -153,7 +164,7 @@ class SQLiteViewModel{
         
         do {
             for item in try db!.prepare(watchListTable) {
-                resultItems.append(myMovie(id:item[movieId]))
+                resultItems.append(myMovie(order:item[order], id:item[movieId]))
             }
         } catch {
             print("Fetch cat failed: \(error)")
@@ -174,5 +185,16 @@ class SQLiteViewModel{
 
         users = resultItems
         return resultItems;
+    }
+    private func addTestData() {
+        do {
+                try db?.run(seenMovieTable.delete())
+                addToSeenMovie(id: 1)
+                addToSeenMovie(id: 2)
+                addToSeenMovie(id: 3)
+            } catch {
+                print("failed to init data for seen Movies: \(error)")
+                
+            }
     }
 }

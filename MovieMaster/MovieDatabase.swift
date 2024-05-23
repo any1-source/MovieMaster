@@ -97,7 +97,7 @@ class MovieViewModel : MovieViewModelProtocol {
             DispatchQueue.main.async {
                 self?.isLoading = true
                 guard let data = data, error == nil else {
-                    print(error)
+                    print(error ?? "couldnt be loaded")
                     return
                 }
                 print("data could be recived")

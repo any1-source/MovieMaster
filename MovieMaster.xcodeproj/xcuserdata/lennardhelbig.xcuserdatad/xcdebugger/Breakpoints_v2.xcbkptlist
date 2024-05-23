@@ -18,6 +18,36 @@
             endingLineNumber = "99"
             landmarkName = "fetch()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6630EFA3-8FF3-44A3-9EA0-F8790AE20B7F - 15ad58a11d3db44e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MovieMaster.MovieViewModel.fetch() -&gt; ()"
+                  moduleName = "MovieMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lennardhelbig/Documents/MovieMaster/MovieMaster/MovieDatabase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99">
+               </Location>
+               <Location
+                  uuid = "6630EFA3-8FF3-44A3-9EA0-F8790AE20B7F - 15ad58a11d3db44e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MovieMaster.MovieViewModel.fetch() -&gt; ()"
+                  moduleName = "MovieMaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lennardhelbig/Documents/MovieMaster/MovieMaster/MovieDatabase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -56,7 +86,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "01CA2B7F-719D-4E34-A9E8-C25B5C328ED1"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MovieMaster/MovieDatabase.swift"
@@ -88,7 +118,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E0237CD2-BFE1-4CD0-9052-2E768E235F3C"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MovieMaster/MovieDatabase.swift"
@@ -96,6 +126,38 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "103"
             endingLineNumber = "103"
+            landmarkName = "fetch()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "332F8F37-89CE-4F16-8822-2A14497DE241"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieMaster/SQLiteDatabase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D9F1D1A-AE04-4077-A47A-1E9E91B2CCF0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieMaster/MovieDatabase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "fetch()"
             landmarkType = "7">
          </BreakpointContent>
