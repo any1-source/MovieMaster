@@ -9,6 +9,8 @@ import Foundation
 
 struct MovieScreen: View {
     @Environment(\.movieViewModel) var movieViewModel
+    @Binding var currentUserID: Int
+    
     var body: some View {
         VStack(spacing:3) {
             Divider()
@@ -34,6 +36,7 @@ struct MovieScreen: View {
         }
     }
 }
-#Preview {
-    MovieScreen().environment(MovieViewModelMock())
-}
+//#Preview {
+    //@State var temp:Int = 1
+    //MovieScreen(currentUserID: $temp).environment(MovieViewModelMock())
+//}

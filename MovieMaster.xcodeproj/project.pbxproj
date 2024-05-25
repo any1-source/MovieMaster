@@ -55,6 +55,7 @@
 		E6BBAAF12BEDFD240066F452 /* YoutubeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeScreen.swift; sourceTree = "<group>"; };
 		E6BBAAF32BF8AEE20066F452 /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
 		E6BBAAF82BF8C7910066F452 /* SQLiteTempScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteTempScreen.swift; sourceTree = "<group>"; };
+		E6BBAAFA2C0220A50066F452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,7 @@
 		E6BBAAC22BECD34B0066F452 /* MovieMaster */ = {
 			isa = PBXGroup;
 			children = (
+				E6BBAAFA2C0220A50066F452 /* Info.plist */,
 				E6BBAAC32BECD34B0066F452 /* MovieMasterApp.swift */,
 				E6BBAAC52BECD34B0066F452 /* ContentView.swift */,
 				E6BBAAC72BECD34C0066F452 /* Assets.xcassets */,
@@ -113,8 +115,8 @@
 				E6BBAAED2BED0F040066F452 /* MovieDatabase.swift */,
 				E6BBAAEF2BEDFD120066F452 /* MovieScreen.swift */,
 				E6BBAAF12BEDFD240066F452 /* YoutubeScreen.swift */,
-				E6BBAAF32BF8AEE20066F452 /* SQLiteDatabase.swift */,
 				E6BBAAF82BF8C7910066F452 /* SQLiteTempScreen.swift */,
+				E6BBAAF32BF8AEE20066F452 /* SQLiteDatabase.swift */,
 			);
 			path = MovieMaster;
 			sourceTree = "<group>";
@@ -453,6 +455,7 @@
 				DEVELOPMENT_TEAM = A6UNYV79Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MovieMaster/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -482,6 +485,7 @@
 				DEVELOPMENT_TEAM = A6UNYV79Y3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MovieMaster/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
